@@ -8,6 +8,7 @@ but reduces the size of the component by:
 
 * Not including language dialects (e.g. just `en` rather than `en_GB`, `en_AU`, `en_NZ`, ...)
 * Only including [ISO 639-1 languages](http://en.wikipedia.org/wiki/ISO_639-1), which covers the world major's languages
+* Not including CLDR data, which includes country codes such as `Unknown or Invalid Region (ZZ)`
 
 ## Installing
 
@@ -17,7 +18,7 @@ and run `composer update` to install it into your project:
 ```json
 {
   "require": {
-    "openclerk/country-list": "dev-master"
+    "openclerk/country-list": "~1.0"
   }
 }
 ```
